@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 15px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    width: 55px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 75%;
+}
+
+.menu nav a {
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.menu nav a::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #eeff00, #FF7100);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+    width: 30px;
+}
+
+.menu nav a:hover {
+    color: #ffffff;
+}
+
+
+.comentarios {
+    max-height: 600px;
+    overflow-y: auto;
+}
+.content {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+#form-container {
+   
+    width: 50%;
+    background-color: var(--color-light-50);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+}
+
+#form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.estrelas{
+    justify-content:space-evenly ;
+}
+#form-container input[type="text"],
+#form-container textarea {
+    width: 100%;
+    padding: 10px;
+    /*Cor do Input do forumário ficando transparente border: 1px solid var(--color-dark-50); */
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#form-container input[type="submit"] {
+    background-color: var(--color-gradient);
+    color: var(--color-light-50);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#saved-data {
+    width: 45%;
+    background-color: var(--color-light-50);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+}
+
+#saved-data h2 {
+    color: var(--color-dark-50);
+    margin-bottom: 20px;
+}
+
+#saved-data p {
+    color: var(--color-dark-50);
+    margin-bottom: 10px;
+}
